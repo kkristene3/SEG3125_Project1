@@ -1,0 +1,133 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Outfit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+/* Colour scheme */
+:root {
+    --purple: #702DA9;
+    --dark-green: #D3EFB7;
+    --light-green: #DFFDC1;
+    --yellow: #FFFF83;
+    --dark-blue: #C7ECFC;
+    --light-blue: #E6FAFF;
+    --white-blue: #F4FDFF;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: var(--light-blue);
+    padding: 30px 0;
+    min-height: 100px;
+    border: none;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-toggle {
+    background: var(--purple);
+    margin-left: 15px;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+/* Logo styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    max-height: 80px;
+    margin-right: 35px;
+}
+
+/* Title styling */
+#title {
+    font-size: 4.5em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: var(--dark-green);
+    font-family: 'Londrina Solid', sans-serif;
+    margin-left: 15px;
+}
+
+.text-title {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+/* Button styling */
+.get-started {
+    background-color: var(--yellow);
+    padding: 1px 30px;
+    border: 2px solid var(--dark-green);
+    border-radius: 50px;
+    font-weight: bold;
+    width: auto;
+    margin-top: 15px;
+}
+
+#booking-container {
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+}
+
+#booking-text {
+    color: var(--purple);
+}
+
+header {
+    background: var(--light-blue);
+}
+
+/* Navigation links styling */
+.nav-links {
+    margin-top: 15px;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.navbar-inverse {
+    margin-top: 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    font-family: '"League Spartan', sans-serif;
+    color: var(--purple);
+    font-size: 1.3em;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: var(--purple);
+}
+
+/* Override bootstrap styling */
+/* Override the active link styling */
+.navbar-nav > .active > a {
+    background-color: transparent !important;
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 10px;
+}
+
+/* Override hover effect for the active link */
+.navbar-nav > .active > a:hover {
+    background-color: transparent !important;
+}
+
+/* Override hover effect for the other links */
+.navbar-nav > li > a:hover {
+    background-color: transparent !important;
+    color: gray !important;
+}
