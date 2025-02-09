@@ -1,0 +1,37 @@
+/* Background image */
+body {
+    background: url(../imgs/background.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Title */
+#main-title {
+    font-size: 6em;
+    color: var(--light-green);
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Londrina Solid', sans-serif;
+}
+
+/* Sub-Title */
+#sub-title {
+    font-size: 2em;
+    color: #F2FFEB;
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Londrina Solid', sans-serif;
+}
+
+/* Statement Messages */
+.statement {
+    font-size: 1.5em;
+    color: #F2FFEB;
+    text-align: center;
+    margin-top: 9%;
+    font-family: 'League Spartan', sans-serif;
+}
+
+#statement2 {
+    margin-top: 2%;
+    padding: 0 25% 0 25%;
+}

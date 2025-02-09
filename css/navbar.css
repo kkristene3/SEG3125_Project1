@@ -50,13 +50,17 @@
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    font-family: '"League Spartan', sans-serif;
+    font-family: 'League Spartan', sans-serif;
     color: var(--purple);
-    font-size: 1.3em;
+    font-size: 1.6em;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: var(--purple);
+}
+
+header {
+    background: var(--light-blue);
 }
 
 /* Override bootstrap styling */
@@ -115,7 +119,7 @@
     border-radius: 50px;
     font-weight: bold;
     width: auto;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #booking-container {
@@ -126,8 +130,4 @@
 
 #booking-text {
     color: var(--purple);
-}
-
-header {
-    background: var(--light-blue);
 }
