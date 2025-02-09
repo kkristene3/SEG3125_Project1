@@ -1,0 +1,36 @@
+body {
+    background: var(--dark-green);
+}
+
+/* Heading */
+.main-title{
+    margin-top: 4%;
+}
+h1 {
+    font-size: 6em;
+    font-family: 'Londrina Solid', sans-serif;
+    padding: 0;
+    color: var(--yellow);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Intro message */
+#intro-message {
+    font-size: 1.5em;
+    font-family: 'League Spartan', sans-serif;
+    padding: 0;
+    color: var(--purple);
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Services Offered Container */
+#services-offered{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}

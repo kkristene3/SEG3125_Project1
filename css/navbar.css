@@ -16,7 +16,6 @@
 /* Navbar styling */
 .navbar {
     background-color: var(--light-blue);
-    padding: 30px 0;
     min-height: 100px;
     border: none;
 }
@@ -86,6 +85,7 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .logo {
