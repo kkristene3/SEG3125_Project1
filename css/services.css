@@ -11,20 +11,51 @@ h1 {
     font-family: 'Londrina Solid', sans-serif;
     padding: 0;
     color: var(--yellow);
-    font-weight: 400;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 /* Intro message */
 #intro-message {
     font-size: 1.5em;
     font-family: 'League Spartan', sans-serif;
-    padding: 0;
     color: var(--purple);
-    font-weight: 400;
     text-align: center;
-    margin-top: 20px;
+    margin: 50px;
+    padding: 0 70px 0 70px;
+}
+
+
+/* Toggle Button */
+#service-level {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.btn-primary{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 25px;
+    font-size: 1.5em;
+    font-family: 'League Spartan', sans-serif;
+    border-radius: 5px;
+}
+
+.btn-secondary{
+    background-color: inherit;
+    color: black;
+    border: none;
+    padding: 8px 25px;
+    font-size: 1.5em;
+    font-family: 'League Spartan', sans-serif;
+    border-radius: 5px;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: inherit;
 }
 
 /* Services Offered Container */
@@ -33,4 +64,5 @@ h1 {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: center;
+    margin-top: 50px;
 }

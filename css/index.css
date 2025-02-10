@@ -6,10 +6,10 @@ body {
 }
 /* Title */
 #main-title {
-    font-size: 6em;
+    font-size: 7em;
     color: var(--light-green);
     text-align: center;
-    margin-top: 10%;
+    margin-top: 8%;
     font-family: 'Londrina Solid', sans-serif;
 }
 
@@ -24,7 +24,7 @@ body {
 
 /* Statement Messages */
 .statements {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #F2FFEB;
     text-align: center;
     margin-top: 9%;
@@ -34,4 +34,14 @@ body {
 #statement2 {
     margin-top: 2%;
     padding: 0 25% 0 25%;
+}
+
+/* Footer */
+footer {
+    color: #F2FFEB;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 8px;
+    width: 100%;
 }

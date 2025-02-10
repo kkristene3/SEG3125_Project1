@@ -41,7 +41,7 @@
             </button>
 
             <!-- Logo + Title -->
-            <a class="navbar-brand logo-container" href="index.html" id="title">
+            <a class="navbar-brand logo-container" href="../index.html" id="title">
                 <img src="../imgs/wichu.png" alt="wichu" class="logo">
                 <span class="text-title">
             <span id="wish">WISH</span>
@@ -54,7 +54,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <!-- Links -->
             <ul class="nav navbar-nav navbar-right nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li class="active"><a href="services.html">Services</a></li>
                 <li><a href="our_tutors.html">Our Tutors</a></li>
                 <li><a href="location.html">Location</a></li>
@@ -71,18 +71,48 @@
 
 <div id="intro-message">
     <p>WISH ACADEMY offers one-to-one tutoring sessions from the comfort of your home. Tailored to help students excel in English, Math, and Science, our flexible plans are designed to fit your schedule and academic goals. From mastering math fundamentals and improving reading comprehension to acing science concepts, our experienced tutors are here to help you through every step.</p>
+    <br>
     <p>Start building confidence and achieve your potential with WISH ACADEMY tutors!</p>
 </div>
 
 <!-- Services Level Selection Toggle -->
 <div id="service-level">
-    <h3>Choose Your Service Level</h3>
     <div class="service-level-toggle">
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+        <button type="button" class="btn btn-primary">Elementary</button>
     </div>
+
+    <div class="service-level-toggle">
+        <button type="button" class="btn btn-secondary">High School</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+        <h5 class="card-title">Dark card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+</div>
 
 <!-- Services Offered Boxes-->
 <div id="services-offered">
@@ -90,13 +120,15 @@
     <!-- Service Type Boxes -->
     <div class="service-type">
         <h2>Math</h2>
-        <h2>$20 / hour</h2>
+        <h2>$20 / <span class="subscript">hour</span></h2>
     </div>
     <div class="service-type">
         <h2>English</h2>
+        <h2>$15 / <span class="subscript">hour</span></h2>
     </div>
     <div class="service-type">
         <h2>Science</h2>
+        <h2>$20 / <span class="subscript">hour</span></h2>
     </div>
 
 </div>
