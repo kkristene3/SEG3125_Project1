@@ -15,6 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/services.js"></script>
 </head>
 <body>
 
@@ -78,39 +79,11 @@
 <!-- Services Level Selection Toggle -->
 <div id="service-level">
     <div class="service-level-toggle">
-        <button type="button" class="btn btn-primary">Elementary</button>
+        <button type="button" class="btn btn-primary" id="elementary-button">Elementary</button>
     </div>
 
     <div class="service-level-toggle">
-        <button type="button" class="btn btn-secondary">High School</button>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm-6 mb-3 mb-sm-0">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-        <h5 class="card-title">Dark card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button type="button" class="btn btn-secondary" id="high-school-button">High School</button>
     </div>
 </div>
 
@@ -118,17 +91,53 @@
 <div id="services-offered">
 
     <!-- Service Type Boxes -->
-    <div class="service-type">
-        <h2>Math</h2>
-        <h2>$20 / <span class="subscript">hour</span></h2>
+
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Math</h3>
+                <h2 class="card-price" id="math-price"><sup>$</sup>20<sub>/ hour</sub></h2>
+                <ul class="card-list" id="math-list">
+                    <li>Number Skills and Patterning</li>
+                    <li>Addition and Subtraction</li>
+                    <li>Multiplication and Division</li>
+                    <li>Fractions and Decimals</li>
+                    <li>Word Problems</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="service-type">
-        <h2>English</h2>
-        <h2>$15 / <span class="subscript">hour</span></h2>
+
+    <div class="col-sm-6 mb-3 mb-sm-0 card-middle">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">English</h3>
+                <h2 class="card-price" id="english-price"><sup>$</sup>15<sub>/ hour</sub></h2>
+                <ul class="card-list" id="english-list">
+                    <li>Vocabulary</li>
+                    <li>Grammar and Syntax</li>
+                    <li>Reading Comprehension</li>
+                    <li>Phonics and Decoding</li>
+                    <li>Writing</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="service-type">
-        <h2>Science</h2>
-        <h2>$20 / <span class="subscript">hour</span></h2>
+
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Sciences</h3>
+                <h2 class="card-price" id="sciences-price"><sup>$</sup>20<sub>/ hour</sub></h2>
+                <ul class="card-list" id="sciences-list">
+                    <li>Life Science</li>
+                    <li>Physical Science</li>
+                    <li>Earth and Space</li>
+                    <li>Matter and Energy</li>
+                    <li>Structures and Mechanisms</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 </div>

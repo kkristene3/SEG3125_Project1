@@ -6,7 +6,7 @@ body {
 }
 /* Title */
 #main-title {
-    font-size: 7em;
+    font-size: 7.1em;
     color: var(--light-green);
     text-align: center;
     margin-top: 8%;
@@ -15,7 +15,7 @@ body {
 
 /* Sub-Title */
 #sub-title {
-    font-size: 2em;
+    font-size: 2.1em;
     color: #F2FFEB;
     text-align: center;
     margin-top: 2%;
@@ -24,7 +24,7 @@ body {
 
 /* Statement Messages */
 .statements {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #F2FFEB;
     text-align: center;
     margin-top: 9%;
