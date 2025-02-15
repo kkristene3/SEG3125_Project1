@@ -1,0 +1,55 @@
+body{
+    background: var(--dark-green);
+}
+
+/* Title */
+#main-title {
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 6em;
+    color: var(--purple);
+    text-align: center;
+    margin-top: 4%;
+}
+
+/* Text */
+.title {
+    font-family: "Londrina Solid", sans-serif;
+    color: var(--purple);
+    font-size: 4.5em;
+}
+.text {
+    font-family: "League Spartan", sans-serif;
+    color: var(--white-blue);
+    text-shadow: #1E1E1E 1px 1px 1px;
+    font-size: 2em;
+}
+
+/* Location */
+#service-title {
+    margin-bottom: 0;
+}
+
+#headquarters-title {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+#location-address {
+    margin: 80px 0 100px 8%;
+}
+
+/* Hours of Operation */
+#hours-of-operation {
+    text-align: center;
+}
+
+.days-container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Map */
