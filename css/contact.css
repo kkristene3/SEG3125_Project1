@@ -1,0 +1,16 @@
+body {
+    background-color: var(--light-blue);
+}
+
+/* Heading */
+.main-title{
+    margin-top: 4%;
+}
+h1 {
+    font-size: 6em;
+    font-family: 'Londrina Solid', sans-serif;
+    padding: 0;
+    color: var(--purple);
+    text-align: center;
+    margin: 20px;
+}
