@@ -15,7 +15,7 @@
 
 /* Navbar styling */
 .navbar {
-    background-color: var(--light-blue);
+    background-color: var(--white-blue);
     min-height: 100px;
     border: none;
 }
@@ -59,7 +59,7 @@
 }
 
 header {
-    background: var(--light-blue);
+    background: var(--white-blue);
 }
 
 /* Override bootstrap styling */
