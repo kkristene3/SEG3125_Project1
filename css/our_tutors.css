@@ -2,6 +2,11 @@ body {
     background-color: var(--light-blue);
 }
 
+.navbar {
+    min-height: 50px; /* Ensure the navbar doesn’t shrink */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
 /* Heading */
 #top-heading{
     display: flex;
@@ -54,7 +59,7 @@ h4 {
     gap: 10px;
 }
 
-img {
+.img-fluid {
     width: 100%;
     height: 100%;
     border-radius: 10px;
