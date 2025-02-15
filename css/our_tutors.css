@@ -1,0 +1,113 @@
+body {
+    background-color: var(--light-blue);
+}
+
+/* Heading */
+#top-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.main-title{
+    margin-top: 4%;
+    justify-content: center;
+    position: relative;
+}
+h1 {
+    font-size: 4.5em;
+    font-family: 'Londrina Solid', sans-serif;
+    padding: 0;
+    color: var(--purple);
+    text-align: center;
+    margin: 20px;
+}
+
+#pencil-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+}
+
+#pencil {
+    width: 155px;
+    height: auto;
+    margin-right: 50px;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-family: 'League Spartan', sans-serif;
+    padding: 0;
+    color: var(--purple);
+    text-align: center;
+}
+
+/* Tutors Section */
+#tutors {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.icons {
+    width: 35px;
+    height: auto;
+    justify-self: center;
+}
+
+/* Card */
+.card {
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.card .row {
+    display: flex;
+    height: 100%;
+}
+
+/* Right side of card */
+.card-body {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    justify-content: center; /* Evenly space the content in the column */
+    height: 100%;
+}
+
+.card-title {
+    font-size: 2em;
+    font-family: 'Londrina Solid', sans-serif;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.card-description {
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 1.1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px 10px;
+    margin: 10px 30px 20px 0;
+    align-items: center;
+}
+
+/* Card backgrounds */
+.white-blue {
+    background: var(--white-blue);
+}
+
+.dark-green {
+    background: rgba(211, 239, 183, 0.5);
+}
