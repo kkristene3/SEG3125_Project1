@@ -6,6 +6,7 @@ body {
 /* Heading */
 .main-title{
     margin-top: 4%;
+    margin-bottom: 50px;
 }
 h1 {
     font-size: 6em;
