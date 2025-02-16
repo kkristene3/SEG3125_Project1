@@ -4,14 +4,14 @@ body {
 }
 /* Heading + Caption */
 h1 {
-    font-size: 6.5rem;
+    font-size: 6em;
     font-family: 'Londrina Solid', sans-serif;
     color: var(--dark-green);
     margin-bottom: 15px;
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.5em;
     font-family: "League Spartan", sans-serif;
     color: var(--purple);
     margin-bottom: 50px;
@@ -25,10 +25,14 @@ p {
     padding: 20px;
 }
 
+.main-title {
+    margin-left: 35px;
+}
+
 #wichu {
     transform: rotate(15deg);
     transform: scaleX(-1);
-    margin-right: 25px;
+    margin-right: 30px;
 }
 
 /* Toggle Buttons */
@@ -61,7 +65,8 @@ p {
 }
 
 .btn-clicked {
-    background-color: var(--white-blue);
+    background-color: var(--purple);
+    color: white;
 }
 
 .btn-primary:hover {
@@ -81,11 +86,9 @@ p {
 
 /* Booking Content */
 #booking-content {
-    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: auto 0;
 }
 
 #left-side {
@@ -95,6 +98,10 @@ p {
 #right-side {
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
+    width: 30%;
+    height: 100%;
+    position: relative;
 }
 
 /* Labels/Subheadings */
@@ -118,6 +125,7 @@ h2 {
     margin: 10px;
     font-size: 1.3em;
     font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
     border-radius: 5px;
     background-color: white;
     text-align: left;
@@ -126,35 +134,66 @@ h2 {
 
 .btn-caption {
     font-size: 0.8em;
+    margin-top: 5px;
     font-family: 'League Spartan', sans-serif;
+    font-weight: normal;
     color: gray;
 }
 
-.selected{
-    background-color: #f8f8f8;
+.active{
+    background-color: #f0f4fa;
 }
 
 .btn-subject:hover, .btn-grade:hover {
-    background-color: var(--purple);
-    color: white;
+    background-color: #dbd9d9;
+    color: inherit;
+}
+
+/* Calendar */
+#calendar-area {
+    display: contents;
+}
+
+#calendar-area input {
+    width: 50%;
 }
 
 /* Times Configuration */
-#time {
-    display: block;
+.times {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 50%;
 }
+
+.times input {
+    margin: 0;
+    max-width: 200px;
+}
+
 
 label {
     font-family: "League Spartan", sans-serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-right: 50px;
 }
 
 input {
-    margin-bottom: 25px;;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.3em;
+    border: 1px solid gray;
+    padding: 10px;
 }
 
 /* Continue button */
 #continue-area {
-    position: absolute;
-    bottom: 0;
-    align-content: center;
+    width: 50%;
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+    padding: 25px;
 }

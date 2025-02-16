@@ -98,18 +98,18 @@
          <div class="section">
             <h2>SUBJECT</h2>
             <div class="boxes">
-                <button class="btn btn-subject selected" id="math">Math
-                    <div class="btn-caption">
+                <button class="btn btn-subject active" id="math" onclick="changeSubjectButton(this)">Math
+                    <div class="btn-caption" id="math-price">
                         <sup>$</sup>20<sub>/ hour</sub></span>
                     </div>
                 </button>
-                <button class="btn btn-subject" id="english">English
-                    <div class="btn-caption">
+                <button class="btn btn-subject" id="english" onclick="changeSubjectButton(this)">English
+                    <div class="btn-caption" id="english-price">
                         <sup>$</sup>15<sub>/ hour</sub></span>
                     </div>
                 </button>
-                <button class="btn btn-subject" id="science">Science
-                    <div class="btn-caption">
+                <button class="btn btn-subject" id="science" onclick="changeSubjectButton(this)">Science
+                    <div class="btn-caption" id="sciences-price">
                         <sup>$</sup>20<sub>/ hour</sub></span>
                     </div>
                 </button>
@@ -119,10 +119,10 @@
          <!-- Grades -->
         <div class="section">
             <h2>GRADE</h2>
-            <div class="boxes">
-                <button class="btn btn-grade selected" id="grade1">6</button>
-                <button class="btn btn-grade" id="grade2">7</button>
-                <button class="btn btn-grade" id="grade3">8</button>
+            <div class="boxes" id="grade-buttons">
+                <button class="btn btn-grade active" id="grade1" onclick="changeGradeButton(this)">6</button>
+                <button class="btn btn-grade" id="grade2" onclick="changeGradeButton(this)">7</button>
+                <button class="btn btn-grade" id="grade3" onclick="changeGradeButton(this)">8</button>
             </div>
         </div>
     </div>
@@ -130,28 +130,33 @@
     <div id="right-side">
 
         <h2>DATE/TIME</h2>
-    
-        <!-- Calendar -->
-        <label for="booking-date">Date</label>
-        <input type="date" id="booking-date" name="booking-date">
 
-        <!-- TIMES -->
-        <!-- Start -->
-         <div class="times">
-            <label for="startTime">Start time: </label>
-            <input type="time" id="startTime" step="1800"/>
-         </div>
-        
-        <!-- End -->
-         <div class="times">
-            <label for="endTime">End time: </label>
-            <input type="time" id="endTime" step="1800"/>
-         </div>
+        <form id="booking-form">
+            <!-- Calendar -->
+            <div id="calendar-area">
+                <label for="booking-date">Date</label>
+                <input type="date" id="booking-date" name="booking-date" required>
+            </div>
 
-         <!-- CONTINUE BUTTON -->
-    <div id="continue-area">
-        <button type="submit" class="btn btn-primary" id="continue">CONTINUE</button>
-    </div> 
+            <!-- TIMES -->
+            <!-- Start -->
+            <div class="times">
+                <label for="startTime">Starts: </label>
+                <input type="time" id="startTime" step="1800" required/>
+            </div>
+
+            <!-- End -->
+            <div class="times">
+                <label for="endTime">Ends: </label>
+                <input type="time" id="endTime" step="1800" required/>
+            </div>
+
+            <!-- CONTINUE BUTTON -->
+            <div id="continue-area">
+                <button type="submit" class="btn btn-primary" id="continue-btn">CONTINUE</button>
+            </div>
+        </form>
+
     </div>
      
 </div>
