@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Validate date input
         if (checkDate()) {
             // If validation passes, redirect to the confirmation page
-            window.location.href = "../html/confirmation.html";
+            window.location.href = "../html/client_info.html";
         }
     });
 });

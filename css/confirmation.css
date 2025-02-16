@@ -1,0 +1,52 @@
+body {
+    background-color: #FFFFB9;
+}
+
+#wichu {
+    transform: rotate(10deg);
+    transform: scaleX(-1);
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 6em;
+    font-family: "Londrina Solid", sans-serif;
+    color: var(--dark-blue);
+    margin-bottom: 35px;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: "League Spartan", sans-serif;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: "League Spartan", sans-serif;
+}
+
+#confirmation-message {
+    text-align: center;
+    width:75%;
+    margin: 0 auto;
+}
+
+/* Table */
+.booking-details {
+    background-color: var(--white-blue);
+    width:90%;
+    padding: 50px;
+    margin: 50px auto;
+}
+
+table {
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.3em;
+}
