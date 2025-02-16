@@ -1,5 +1,6 @@
 body {
     background-color: var(--light-blue);
+    margin-bottom: 25px;
 }
 
 /* Heading */
@@ -13,4 +14,51 @@ h1 {
     color: var(--purple);
     text-align: center;
     margin: 20px;
+}
+
+/* Form */
+#content {
+    width: 50%;
+    margin: 0 auto;
+}
+.contact-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtitle */
+h2 {
+    font-size: 2em;
+    font-family: 'League Spartan', sans-serif;
+    padding: 0;
+    color: var(--purple);
+}
+
+form {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1em;
+}
+
+/* Input fields */
+input, select, textarea {
+    margin-bottom: 25px;  /* Adjust spacing */
+    padding: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+
+/* Submit button */
+#submit-btn {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-family: 'Londrina Solid', sans-serif;
+    color: var(--purple);
+    background-color: var(--yellow);
 }
