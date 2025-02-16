@@ -15,6 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/contact.js"></script>
 </head>
 <body>
 
@@ -76,23 +77,23 @@
     <div class="contact-form">
     
         <!-- Form -->
-         <form>
+         <form id="form-for-contact">
     
             <div class="form-row">        
                 <label for="inputName">Name</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                <input type="text" required class="form-control" id="inputName" placeholder="Name">
             </div>
             <div class="form-row">
                     <label for="inputPhoneNumber">Phone Number</label>
-                    <input type="tel" class="form-control" id="inputPhoneNumber" placeholder="123-123-1234">
+                    <input type="tel" required class="form-control" id="inputPhoneNumber" placeholder="123-123-1234" pattern="\d{3}-\d{3}-\d{4}">
                 </div>
             <div class="form-row">
                     <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    <input type="email" required class="form-control" id="inputEmail" placeholder="Email">
                 </div> 
             <div class="form-row">
                 <label for="inputMessage">Message</label>
-                <textarea class="form-control" id="inputMessage" placeholder="Message" rows="4"></textarea>
+                <textarea required class="form-control" id="inputMessage" placeholder="Message" rows="4"></textarea>
             </div>
     
             <button type="submit" class="btn btn-primary" id="submit-btn">SUBMIT</button>
