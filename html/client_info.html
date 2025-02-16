@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- Link to CSS files -->
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/client_info.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Link to JS files -->
+    <script src="../js/client-info.js"></script>
 </head>
 <body>
 
@@ -64,7 +67,91 @@
 </nav>
 
 <!-- Main Content -->
+<div id="intro-msg">
+    <div class="main-title">
+        <h1>BEFORE WE FINISH...</h1>
+        <p>In order to match you with a tutor, we need to know the following:</p>
+    </div>
+</div>
 
+<!-- Form -->
+<form id="client-info-form">
+    <div id="left-side">
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputFirstName">First Name</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="John" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputStreetNumber">Street Number</label>
+                <input type="password" class="form-control" id="inputStreetNumber" placeholder="123" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputLastName">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Smith" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Ottawa" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputStudentFirstName">Student First Name</label>
+                <input type="text" class="form-control" id="inputStudentFirstName" placeholder="Jane" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPostalCode">Postal Code</label>
+                <input type="text" id="inputPostalCode" class="form-control" placeholder="K1A 0B1" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputSchool">Student’s Current School</label>
+                <input type="text" class="form-control" id="inputSchool">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPhoneNumber">Phone Number</label>
+                <input type="tel" id="inputPhoneNumber" class="form-control" placeholder="123-123-123241" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputRelationship">In relation to the student, I am the:</label>
+                <input type="text" class="form-control" id="inputRelationship">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="right-side">
+
+        <!-- Additional Comments -->
+        <div >
+            <label for="furtherComments">Further Comments</label>
+            <textarea class="form-control" id="furtherComments" placeholder="..." rows="5" ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div id="finish-btn-container">
+            <button type="submit" class="btn btn-primary finish-btn">FINISH</button>
+        </div>
+
+        <img src="../imgs/wichu.png" alt="wichu" width=495" height="265" id="wichu">
+
+    </div>
+</form>
 
 </body>
 </html>
