@@ -4,6 +4,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
 /* Title */
 #main-title {
     font-size: 7.1em;
@@ -11,6 +12,7 @@ body {
     text-align: center;
     margin-top: 8%;
     font-family: 'Londrina Solid', sans-serif;
+    text-shadow: #1E1E1E 2px 2px 2px;
 }
 
 /* Sub-Title */
@@ -20,10 +22,12 @@ body {
     text-align: center;
     margin-top: 2%;
     font-family: 'Londrina Solid', sans-serif;
+    text-shadow: #1E1E1E 2px 2px 2px;
 }
 
 /* Statement Messages */
 .statements {
+    text-shadow: #1E1E1E 1px 1px 1px;
     font-size: 1.2em;
     color: #F2FFEB;
     text-align: center;
