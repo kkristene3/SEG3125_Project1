@@ -10,10 +10,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- Link to CSS files -->
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/booking.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/booking.js"></script>
+    <!-- CDN for Calendar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 <body>
 
@@ -64,7 +69,50 @@
 </nav>
 
 <!-- Main Content -->
+ <div id="intro-msg">
+    <div class="main-title">
+        <h1>LET'S GET STARTED!</h1>
+        <p>First choose the school level,  then select your preferred subject, grade level, and time that fits your needs and we’ll match you with a tutor.</p>
+    </div>
+    <img src="../imgs/wichu.png" alt="wichu" width="25%" height="20%" id="wichu">
+ </div>
+
+ <!-- Toggle between school level -->
+<div id="booking-content">
+    <div id="service-level">
+        <div class="service-level-toggle">
+            <button type="button" class="btn btn-primary" id="elementary-button"> ✔ Elementary</button>
+        </div>
+    
+        <div class="service-level-toggle">
+            <button type="button" class="btn btn-secondary" id="high-school-button">High School</button>
+        </div>
+    </div>
+    
+    <!-- Select Boxes (Default = Elementary) -->
+    
+    <!-- Subjects -->
+     <div class="boxes">
+        <h2>SUBJECT</h2>
+        <button class="btn btn-subject" id="math">Math</button>
+        <button class="btn btn-subject" id="english">English</button>
+        <button class="btn btn-subject" id="science">Science</button>
+     </div>
+     
+     <!-- Grades -->
+     <div class="boxes">
+        <h2>GRADE</h2>
+        <button class="btn btn-grade" id="grade1">Grade 6</button>
+        <button class="btn btn-grade" id="grade2">Grade 7</button>
+        <button class="btn btn-grade" id="grade3">Grade 8</button>
+     </div>
+    
+     <!-- Calendar -->
+     <label for="booking-date">Select a date:</label>
+     <input type="date" id="booking-date" name="booking-date">
 
 
+
+    </div>
 </body>
 </html>
