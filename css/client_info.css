@@ -42,7 +42,8 @@ label {
     font-weight: normal;
 }
 
-input {
+input, select {
+    font-family: "League Spartan", sans-serif;
     margin-bottom: 10px;
 }
 
